@@ -18,7 +18,7 @@ webpack-hot-update
   >>hot: true,  //是否开启热更新  
     // devServer: {  
     //   contentBase: './dist'  //服务的根目录,默认为根目录  
-    // },  
+    // },    
   },
   
   `开启热更新可能会提示 hotModule错误`
