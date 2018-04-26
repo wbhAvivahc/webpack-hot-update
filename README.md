@@ -11,8 +11,7 @@ webpack-hot-update
 * webpack.config.js中配置 devServer
 
   devServer:{  
-  
-  >>host : '127.0.0.1',  
+  >>host: '127.0.0.1',  
   >>port: 8080,  
   >>open: true, //自动打开窗口  
   >>inline: true, //使用那种刷新的方法  
@@ -34,7 +33,7 @@ webpack-hot-update
 * html自动刷新需要在js中引入
 ```
   if (process.env.NODE_ENV === 'development') {  
-  >>require('./index.html')  
+    require('./index.html')  
   };<br>
 ```
 * webpack配置
