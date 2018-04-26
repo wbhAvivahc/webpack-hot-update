@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <div id='app'>
+    <div v-bind='number'>你好</div>
+    <div style="width:100px;height:100px;background:green" v-click='boom'>
+      456
+      <p>123</p>
+      <div>
+        <input v-model='number'/>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+<script src="wbhUtil.js"></script>
+<script> 
+  var app = new Vue(
+    {
+      el: '#app',
+      data: {
+        number: 123,
+        type: {
+          name: 'wangbinghan'
+        }
+      },
+      methods: {
+        boom(){
+          console.log('boom')
+        }
+      }
+    }
+  )
+</script>
