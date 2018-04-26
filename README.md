@@ -34,7 +34,7 @@ webpack-hot-update
 ```
   if (process.env.NODE_ENV === 'development') {  
     require('./index.html')  
-  };<br>
+  };
 ```
 * webpack配置
 
