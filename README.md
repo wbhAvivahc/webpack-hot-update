@@ -1,7 +1,7 @@
 ﻿# webpack-hot-update
 
 webpack-hot-update
-====
+----
 
 * 安装依赖
 
@@ -51,4 +51,4 @@ if (process.env.NODE_ENV === 'development') {
 
 
 vue
-=====
+------
