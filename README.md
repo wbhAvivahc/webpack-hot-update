@@ -11,11 +11,11 @@ webpack-hot-update
 * webpack.config.js中配置 devServer
 
   devServer:{
-    host : '127.0.0.1',<br>
-    port: 8080,<br>
-    open: true, //自动打开窗口<br>
-    inline: true, //使用那种刷新的方法<br>
-    hot: true,  //是否开启热更新<br>
+        host : '127.0.0.1',
+        port: 8080,
+        open: true, //自动打开窗口
+        inline: true, //使用那种刷新的方法
+        hot: true,  //是否开启热更新
     // devServer: {  
     //   contentBase: './dist'  //服务默认的根目录
     // },
@@ -23,17 +23,17 @@ webpack-hot-update
   
   `开启热更新可能会提示 hotModule错误`
 
-  在webpack.config.js中添加可以解决<br>
-  plugins: [<br>
-    new webpack.HotModuleReplacementPlugin(),<br>
+  在webpack.config.js中添加可以解决
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
   ],<br>
 
   `注意： 使用dev-server在html中需要修改引入js的文件路径`
 
 * html自动刷新需要在js中引入
 
-  if (process.env.NODE_ENV === 'development') {<br>
-    require('./index.html')<br>
+  if (process.env.NODE_ENV === 'development') {
+    require('./index.html')
   };<br>
 
 * webpack配置
